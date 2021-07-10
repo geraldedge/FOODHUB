@@ -73,7 +73,7 @@ nav {
 }
 .b {
   height: 80vh;
-  background-image: url("pexels-jonathan-borba-2983098.jpg");
+  background-image: url("pexels-engin-akyurt-2235831.jpg");
   background-size: cover;
   background-position: center;
 
@@ -96,7 +96,7 @@ nav {
 
   margin-top: calc(1rem + 3vh);
   background: red;
-  margin-right: calc(9rem + 1vw);
+  margin-right: calc(10rem + 1vw);
 }
 
 .login {

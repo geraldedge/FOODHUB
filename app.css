@@ -4,9 +4,8 @@
   padding: 0;
 }
 
-*{
+* {
   -webkit-tap-highlight-color: transparent;
-
 }
 header {
   top: 0;
@@ -34,7 +33,7 @@ nav {
   color: whitesmoke;
   border-radius: 6px;
 }
-.logoutbutton{
+.logoutbutton {
   width: calc(3rem + 3vw);
   height: calc(1rem + 2vw);
   background: black;
@@ -47,15 +46,12 @@ nav {
   justify-content: center;
   align-items: center;
   color: whitesmoke;
-  font-family: "Alfa Slab One", cursive; 
+  font-family: "Alfa Slab One", cursive;
   border-radius: 6px;
   z-index: -5;
-
 }
 
-@media screen and (max-width:576px){
- 
-
+@media screen and (max-width: 576px) {
 }
 
 .cart {
@@ -76,14 +72,14 @@ nav {
   z-index: -10;
 }
 .b {
-  height: 100vh;
-  background-image: url("main.jpg");
+  height: 80vh;
+  background-image: url("pexels-jonathan-borba-2983098.jpg");
   background-size: cover;
   background-position: center;
 
   opacity: 0.8;
 
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .mainsection {
@@ -114,15 +110,14 @@ nav {
   transform: translate(-50%, -50%);
   z-index: 3;
   border-radius: 20px;
-  opacity: 0.;
+  opacity: 0;
   font-family: "Alfa Slab One", cursive;
   font-size: calc(0.7rem + 1vw);
   color: aliceblue;
   padding: 3rem 1rem;
   transition: all 0.5s ease-in-out;
-
 }
-.register{
+.register {
   height: 600px;
   background: black;
   width: 500px;
@@ -139,21 +134,18 @@ nav {
   color: aliceblue;
   padding: 2rem 1rem;
   transition: all 0.5s ease-in-out;
-
-
 }
 /* register page and logout button and then cart queries and api integraion */
-.case{
-  
+.case {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.loginbutton{
+.loginbutton {
   width: calc(4rem + 3vw);
   height: calc(1.5rem + 2vw);
   background: red;
-  margin-top: 20px;;
+  margin-top: 20px;
   cursor: pointer;
   transition: transform ease;
   display: flex;
@@ -164,51 +156,49 @@ nav {
   white-space: nowrap;
 }
 
- 
-.createaccount{
+.createaccount {
   white-space: nowrap;
   width: 100%;
-  margin-top: 20px;;
-
-}
-.logincallbutton{
-  color: red;
-  cursor: pointer;
-}
-.createbutton{
-  color: red;
-  cursor: pointer;
-}
-.createbutton:hover,.logincallbutton:hover{
-  text-decoration: underline;
-}
-.register>i{
-  position: absolute;
-  right: 2rem;;
-  cursor: pointer;
-  font-size: calc(0.8rem + 1vw);
-}
-.login>i{
-  position: absolute;
-  right: 2rem;;
-  cursor: pointer;
-  font-size: calc(0.8rem + 1vw);
-
-}
-.login>i:hover,.register>i:hover{
-  color: red;
-}
-.up{
   margin-top: 20px;
 }
-input[type="text"],input[type="password"]{
+.logincallbutton {
+  color: red;
+  cursor: pointer;
+}
+.createbutton {
+  color: red;
+  cursor: pointer;
+}
+.createbutton:hover,
+.logincallbutton:hover {
+  text-decoration: underline;
+}
+.register > i {
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+  font-size: calc(0.8rem + 1vw);
+}
+.login > i {
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+  font-size: calc(0.8rem + 1vw);
+}
+.login > i:hover,
+.register > i:hover {
+  color: red;
+}
+.up {
+  margin-top: 20px;
+}
+input[type="text"],
+input[type="password"] {
   outline: none;
   width: 80%;
   padding: 0.5rem;
-  font-family: "Alfa Slab One", cursive;  
+  font-family: "Alfa Slab One", cursive;
   font-size: calc(0.8rem + 1vh);
-
-
 }
 .heading > h1 {
   font-family: "Alfa Slab One", cursive;
@@ -236,7 +226,7 @@ input[type="text"],input[type="password"]{
     height: calc(2rem + 4vw);
     margin-top: 10px;
   }
-  .logoutbutton{
+  .logoutbutton {
     font-size: 10px;
   }
 }

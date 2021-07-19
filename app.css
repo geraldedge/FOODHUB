@@ -13,6 +13,22 @@ header {
   position: sticky;
 }
 
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space {
+  height: 8vh;
+}
+.default {
+  height: 80%;
+
+  margin-top: 70px;
+}
+
 nav {
   height: calc(4vw + 4vh);
 
@@ -51,9 +67,6 @@ nav {
   z-index: -5;
 }
 
-@media screen and (max-width: 576px) {
-}
-
 .cart {
   width: calc(1rem + 3vw);
   height: calc(1rem + 3vw);
@@ -68,15 +81,71 @@ nav {
   padding: 1rem;
   transition: all 1s ease-in-out;
   color: whitesmoke;
-  opacity: 0;
-  z-index: -10;
+  opacity: 1;
+  z-index: 3;
 }
+
+.cart_inside {
+  width: calc(1rem + 3vw);
+  height: calc(1rem + 3vw);
+  background: black;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: transform ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 1rem;
+  transition: all 1s ease-in-out;
+  color: whitesmoke;
+  opacity: 1;
+  z-index: 3;
+}
+
+
+.cart_inside1 {
+  width: calc(1rem + 3vw);
+  height: calc(1rem + 3vw);
+  background: black;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: transform ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 1rem;
+  transition: all 1s ease-in-out;
+  color: whitesmoke;
+  opacity: 1;
+  z-index: 3;
+}
+
+.cart_inside2 {
+  width: calc(1rem + 3vw);
+  height: calc(1rem + 3vw);
+  background: black;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: transform ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 1rem;
+  transition: all 1s ease-in-out;
+  color: whitesmoke;
+  opacity: 1;
+  z-index: 3;
+}
+
 .b {
   height: 80vh;
-  background-image: url("armando-ascorve-morales-ypZI_CA91M0-unsplash\ \(1\).jpg");
+  background-image: url("main.jpg");
   background-size: cover;
   background-position: center;
-
+  z-index: -1;
   opacity: 0.8;
 
   background-attachment: scroll;
@@ -96,13 +165,175 @@ nav {
 
   margin-top: calc(1rem + 3vh);
   background: red;
-  margin-right: calc(10rem + 1vw);
+  margin-right: calc(9rem + 1vw);
+}
+
+.notfound {
+  height: 30px;
+  width: 100%;
+  background: #3498db;
+  top: -100%;
+  position: fixed;
+  z-index: 700;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartmenu {
+  height: 100vh;
+  width: 100%;
+  background: #2c3e50;
+  top: -100%;
+  position: fixed;
+  z-index: 704;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+.top {
+  display: flex;
+
+  height: 10%;
+  align-content: center;
+  position: fixed;
+
+
+  width: 100%;
+}
+.container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.placeorder {
+  width: calc(11rem + 3vw);
+  height: calc(1.6rem + 2vw);
+  background: black;
+  cursor: pointer;
+  border-radius: 17px;
+  display: flex;
+  justify-content: center;
+  font-family: "Alfa Slab One", cursive;
+  font-size: calc(0.7rem + 1vw);
+  color: white;
+  align-items: center;
+  white-space: nowrap;
+  padding: 1rem;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.placeorder:hover{
+  background: rgb(0,0,0,0.4);
+  color: #34495e;
+}
+.price{
+  font-size: calc(0.7rem + 1vw);
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  padding: 2rem;
+}
+.top > i {
+  font-size: calc(1.6rem + 1vw);
+  right: 0;
+  position: absolute;
+  margin-right: 50px;
+  cursor: pointer;
+
+}
+#q,
+#w,
+#e,
+#r,
+#s1,
+#t,
+#y,
+#u,
+#i,
+#o,
+#p1,
+#a {
+  position: absolute;
+  z-index: -1;
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+#q {
+  top: 20%;
+  left: 30%;
+}
+#w {
+  right: 20%;
+  top: 60%;
+}
+#e {
+  bottom: 30%;
+  right: 65%;
+}
+#r {
+  left: 10%;
+  right: 45%;
+}
+#t {
+  right: 90%;
+  top: 65%;
+}
+#y {
+  left: 40%;
+  top: 15%;
+}
+#u {
+  bottom: 12%;
+  top: 65%;
+}
+#i {
+  left: 40%;
+  bottom: 15%;
+}
+#o {
+  right: 60%;
+  top: 35%;
+}
+#p1 {
+  right: 10%;
+  top: 35%;
+}
+#s1 {
+  right: 5%;
+  top: 10%;
+}
+#a {
+  right: 15%;
+  bottom: 35%;
+}
+.emptycart {
+  z-index: -20;
+  opacity: 0;
+  color: white;
+  font-size: calc(1rem + 1vw);
+  transition: all 0.5s ease-in-out;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.cartmenu > i {
+  cursor: pointer;
 }
 
 .login {
-  height: 500px;
+  height: 50vh;
   background: black;
-  width: 500px;
+  width: 50vh;
   position: absolute;
   float: left;
   left: 50%;
@@ -110,31 +341,497 @@ nav {
   transform: translate(-50%, -50%);
   z-index: 3;
   border-radius: 20px;
-  opacity: 0;
+  opacity: 0.6;
   font-family: "Alfa Slab One", cursive;
   font-size: calc(0.7rem + 1vw);
   color: aliceblue;
   padding: 3rem 1rem;
   transition: all 0.5s ease-in-out;
 }
+
+.pnot {
+  font-size: calc(1rem + 1vw);
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+}
+
 .register {
-  height: 600px;
+  height: 70%;
   background: black;
-  width: 500px;
+  width: 80%;
   position: absolute;
-  float: left;
-  left: 50%;
+
   top: -100%;
-  transform: translate(-50%, -50%);
+
   z-index: 5;
-  border-radius: 20px;
-  opacity: 0;
+
+  opacity: 1;
   font-family: "Alfa Slab One", cursive;
   font-size: calc(0.7rem + 0.4vw);
   color: aliceblue;
   padding: 2rem 1rem;
   transition: all 0.5s ease-in-out;
+  margin: auto;
 }
+
+.register > input[type="text"] {
+  font-size: calc(0.4rem + 0.5vw);
+}
+
+.register > input[type="password"] {
+  font-size: calc(0.4rem + 0.6vw);
+}
+
+.cover {
+  position: relative;
+}
+
+.top_photo{
+  background-position: center;
+  background-size: cover;
+  background-image: url("pizza3.jpg");
+  height: 20vh;
+
+  opacity: 0.8;
+  
+}
+
+#close_burger{
+  cursor: pointer;
+  font-size: calc(0.8rem + 1vw);
+  color: white;
+}
+
+
+#close_salad{
+  cursor: pointer;
+  font-size: calc(0.8rem + 1vw);
+  color: black;
+}
+
+.top_photo1{
+  background-position: center;
+  background-size: cover;
+  background-image: url("burger2.jpg");
+  height: 20vh;
+
+  opacity: 0.8;
+  
+}
+
+.top_photo2{
+  background-position: center;
+  background-size: cover;
+  background-image: url("salad2.jpg");
+  height: 20vh;
+
+  opacity: 0.8;
+  
+}
+
+.circle{
+  background-color: #4A4A4A;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: calc(1.2rem + 0.7vw);
+  cursor: pointer;
+
+}
+.subtract{
+  width: 20%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+}
+.amount{
+  position: absolute;
+  left: 40%;
+  bottom: 20%;
+
+
+}
+
+.entry_close{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+
+}
+
+.entry_close1{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+
+}
+.entry_close2{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+}
+.entry_close3{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+}
+
+.entry_close4{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+
+  top:-100%;
+  position: absolute;
+}
+
+.entry_close5{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+}
+.entry_close6{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+}
+
+.entry_close7{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+}
+
+.entry_close8{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+}
+.entry_close9{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0  ;
+  top:-100%;
+  position: absolute;
+
+
+}
+.entry_close0{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+}
+.entry_close11{
+  width: 10%;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top:-100%;
+  position: absolute;
+
+}
+
+
+
+
+
+
+
+.close_container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: auto;
+}
+.close_container>i{
+  font-size: calc(0.8rem + 1vw);
+  margin-right: 4px;
+
+}
+#close_pizza{
+  cursor: pointer;
+  font-size: calc(0.8rem + 1vw);
+  color: white;
+}
+
+.circle:hover{
+  border: solid white 1px;
+}
+.circle>i{
+  font-size: calc(0.8rem + 1vw);
+}
+.minus{
+
+  width: 20%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+}
+.minus_circle{
+  opacity: 0;
+  transition: all 1s ease;
+}
+.minus_circle1{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.minus_circle2{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.minus_circle3{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.minus_circle4{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+
+.minus_circle5{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.minus_circle6{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+
+.minus_circle7
+{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+
+.minus_circle8
+{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+
+
+.minus_circle9
+{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+
+
+.minus_circle0
+{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+
+.minus_circle11
+{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+
+
+
+
+
+.pmenu{
+  height: calc(6vw + 6vh);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1rem;
+  color: white;
+  white-space: nowrap;
+  
+}
+
+
+.menu_salad {
+  background: #1e1e1e;
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+  opacity: 1;
+  left: -100%;
+
+  z-index: 200;
+  transition: all 1.5s ease-in-out;
+  overflow: hidden;
+}
+
+
+.menu_pizza {
+  background: #1e1e1e;
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+  opacity: 1;
+  left: -100%;
+
+  z-index: 200;
+  transition: all 1.5s ease-in-out;
+  overflow: hidden;
+}
+
+.menu_burger {
+  background: #1e1e1e;
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+  opacity: 1;
+  left: -100%;
+
+  z-index: 200;
+  transition: all 1.5s ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: -20%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.choosesection {
+  background: #34495e;
+  z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+  .top>i{
+    margin-right: 20px;
+  }
+  .pmenu{
+    margin-top: 30px;
+  }
+  .mainsection {
+    margin-top: calc(3rem + 3vh);
+  }
+  .cart {
+    width: calc(2rem + 4vw);
+    height: calc(2rem + 4vw);
+    margin-top: 10px;
+  }
+
+  .cart_inside {
+    width: calc(2rem + 4vw);
+    height: calc(2rem + 4vw);
+    margin-top: 10px;
+  }
+  .cart_inside1 {
+    width: calc(2rem + 4vw);
+    height: calc(2rem + 4vw);
+    margin-top: 10px;
+  }
+  .cart_inside2 {
+    width: calc(2rem + 4vw);
+    height: calc(2rem + 4vw);
+    margin-top: 10px;
+  }
+  .logoutbutton {
+    font-size: 10px;
+  }
+  .amount{
+    bottom: 40%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .order{
+    background-color: red;
+  }
+  
+  .login {
+    width: 40vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .login {
+    width: 70vh;
+    height: 60vh;
+    margin: auto;
+  }
+}
+
 /* register page and logout button and then cart queries and api integraion */
 .case {
   width: 100%;
@@ -208,6 +905,21 @@ input[type="password"] {
   font-size: calc(0.8rem + 1vw);
   margin-right: 4px;
 }
+
+.cart_inside > i {
+  font-size: calc(0.8rem + 1vw);
+  margin-right: 4px;
+}
+
+.cart_inside1 > i {
+  font-size: calc(0.8rem + 1vw);
+  margin-right: 4px;
+}
+
+.cart_inside2 > i {
+  font-size: calc(0.8rem + 1vw);
+  margin-right: 4px;
+}
 .button > p {
   font-family: "Alfa Slab One", cursive;
   font-size: calc(0.4rem + 1vw);
@@ -215,20 +927,6 @@ input[type="password"] {
 
 .button:hover {
   transform: scaleY(1.05);
-}
-
-@media screen and (max-width: 576px) {
-  .mainsection {
-    margin-top: calc(3rem + 3vh);
-  }
-  .cart {
-    width: calc(2rem + 4vw);
-    height: calc(2rem + 4vw);
-    margin-top: 10px;
-  }
-  .logoutbutton {
-    font-size: 10px;
-  }
 }
 
 .title {
@@ -240,10 +938,7 @@ input[type="password"] {
   justify-content: center;
   font-family: "Alfa Slab One", cursive;
 }
-.choosesection {
-  background: #34495e;
-  z-index: -2;
-}
+
 .choices {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -349,6 +1044,32 @@ img {
   align-items: center;
   justify-content: center;
   font-family: "Alfa Slab One", cursive;
+}
+
+.order {
+  background: #fff;
+  height: calc(5vw + 5vh);
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  font-size: calc(1rem + 1vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Alfa Slab One", cursive;
+  color: black;
+  width: 92%;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.order:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.nothing {
 }
 
 .footer {

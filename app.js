@@ -125,6 +125,13 @@ let cost_p2 = 0;
 let cost_p3 = 0;
 let cost_p4 = 0;
 let cost_p5 = 0;
+let cost_p6 = 0;
+let cost_p7 = 0;
+let cost_p8 = 0;
+let cost_p9 = 0;
+let cost_p10 = 0;
+let cost_p11 = 0;
+let cost_p12 = 0;
 
 let order_pine;
 let food_pine;
@@ -209,7 +216,8 @@ var checker11 = "string";
 var store;
 
 checkertee = () => {
-  store = cost_p1 + cost_p2+cost_p3+cost_p4
+  store = cost_p1 + cost_p2+cost_p3+cost_p4+cost_p5+cost_p6+cost_p7+cost_p8+cost_p9+cost_p10+cost_p11+cost_p12
+
 
   if (store <= 0) {
     price.innerHTML = "";
@@ -790,10 +798,14 @@ add_cheese = () => {
     order_cheese.append(food_cheese);
     order_cheese.append(cost_cheese);
     standard.append(order_cheese);
+    cost_p5 = amount4 * 30;
+    checkertee();
     checker4 = 1;
   } else {
     amount_cheese.innerHTML = amount4 + "pcs.";
     cost_cheese.innerHTML = "&#8373;" + amount4 * 30 + ".00";
+    cost_p5 = amount4 * 30;
+    checkertee();
   }
 };
 
@@ -806,11 +818,15 @@ subtract_cheese = () => {
     amount_cheese.innerHTML = "";
     a = 0;
     checker4 = "string";
+    cost_p5 = amount4 * 30;
+    checkertee();
 
     order_cheese.remove();
   } else {
     cheese_amount.innerHTML = amount4;
     cost_cheese.innerHTML = "&#8373;" + amount4 * 30 + ".00";
+    cost_p5 = amount4 * 30;
+    checkertee();
     if (amount4 === 1) {
       amount_cheese.innerHTML = amount4 + "pc.";
     } else {
@@ -859,10 +875,14 @@ add_squid = () => {
     order_squid.append(food_squid);
     order_squid.append(cost_squid);
     standard.append(order_squid);
+    cost_p6 = amount5 * 40;
+    checkertee();
     checker5 = 1;
   } else {
     amount_squid.innerHTML = amount5 + "pcs.";
     cost_squid.innerHTML = "&#8373;" + amount5 * 40 + ".00";
+    cost_p6 = amount5 * 40;
+    checkertee();
   }
 };
 
@@ -875,11 +895,15 @@ subtract_squid = () => {
     amount_squid.innerHTML = "";
     s = 0;
     checker5 = "string";
+    cost_p6 = amount5 * 40;
+    checkertee();
 
     order_squid.remove();
   } else {
     squid_amount.innerHTML = amount5;
     cost_squid.innerHTML = "&#8373;" + amount5 * 40 + ".00";
+    cost_p6 = amount5 * 40;
+    checkertee();
     if (amount5 === 1) {
       amount_squid.innerHTML = amount5 + "pc.";
     } else {
@@ -928,10 +952,14 @@ add_tin = () => {
     order_tin.append(food_tin);
     order_tin.append(cost_tin);
     standard.append(order_tin);
+    cost_p7 = amount6 * 35;
+    checkertee();
     checker6 = 1;
   } else {
     amount_tin.innerHTML = amount6 + "pcs.";
     cost_tin.innerHTML = "&#8373;" + amount6 * 35 + ".00";
+    cost_p7 = amount6 * 35;
+    checkertee();
   }
 };
 
@@ -944,11 +972,15 @@ subtract_tin = () => {
     amount_tin.innerHTML = "";
     d = 0;
     checker6 = "string";
+    cost_p7 = amount6 * 35;
+    checkertee();
 
     order_tin.remove();
   } else {
     tin_amount.innerHTML = amount6;
     cost_tin.innerHTML = "&#8373;" + amount6 * 35 + ".00";
+    cost_p7 = amount6 * 35;
+    checkertee();
     if (amount6 === 1) {
       amount_tin.innerHTML = amount6 + "pc.";
     } else {
@@ -997,10 +1029,14 @@ add_fish = () => {
     order_fish.append(food_fish);
     order_fish.append(cost_fish);
     standard.append(order_fish);
+    cost_p8 = amount7 * 30;
+    checkertee();
     checker7 = 1;
   } else {
     amount_fish.innerHTML = amount7 + "pcs.";
     cost_fish.innerHTML = "&#8373;" + amount7 * 30 + ".00";
+    cost_p8 = amount7 * 30;
+    checkertee();
   }
 };
 
@@ -1013,11 +1049,15 @@ subtract_fish = () => {
     amount_fish.innerHTML = "";
     f = 0;
     checker7 = "string";
+    cost_p8 = amount7 * 30;
+    checkertee();
 
     order_fish.remove();
   } else {
     fish_amount.innerHTML = amount7;
     cost_fish.innerHTML = "&#8373;" + amount7 * 30 + ".00";
+    cost_p8 = amount7 * 30;
+    checkertee();
     if (amount7 === 1) {
       amount_fish.innerHTML = amount7 + "pc.";
     } else {
@@ -1066,10 +1106,14 @@ add_noodles = () => {
     order_noodles.append(food_noodles);
     order_noodles.append(cost_noodles);
     standard.append(order_noodles);
+    cost_p9 = amount8 * 22;
+    checkertee();
     checker8 = 1;
   } else {
     amount_noodles.innerHTML = amount8 + "pcs.";
     cost_noodles.innerHTML = "&#8373;" + amount8 * 22 + ".00";
+    cost_p9 = amount8 * 22;
+    checkertee();
   }
 };
 
@@ -1082,11 +1126,15 @@ subtract_noodles = () => {
     amount_noodles.innerHTML = "";
     c = 0;
     checker8 = "string";
+    cost_p9 = amount8 * 22;
+    checkertee();
 
     order_noodles.remove();
   } else {
     noodles_amount.innerHTML = amount8;
     cost_noodles.innerHTML = "&#8373;" + amount8 * 22 + ".00";
+    cost_p9 = amount8 * 22;
+    checkertee();
     if (amount8 === 1) {
       amount_noodles.innerHTML = amount8 + "pc.";
     } else {
@@ -1135,10 +1183,16 @@ add_roco = () => {
     order_roco.append(food_roco);
     order_roco.append(cost_roco);
     standard.append(order_roco);
+
     checker9 = 1;
+        cost_p10 = amount9 * 25;
+    checkertee();
+
   } else {
     amount_roco.innerHTML = amount9 + "pcs.";
     cost_roco.innerHTML = "&#8373;" + amount9 * 25 + ".00";
+    cost_p10 = amount9 * 25;
+    checkertee();
   }
 };
 
@@ -1151,10 +1205,14 @@ subtract_roco = () => {
     amount_roco.innerHTML = "";
     v = 0;
     checker9 = "string";
+    cost_p10 = amount9 * 25;
+    checkertee();
     order_roco.remove();
   } else {
     roco_amount.innerHTML = amount9;
     cost_roco.innerHTML = "&#8373;" + amount9 * 25 + ".00";
+    cost_p10 = amount9 * 25;
+    checkertee();
     if (amount9 === 1) {
       amount_roco.innerHTML = amount9 + "pc.";
     } else {
@@ -1203,10 +1261,14 @@ add_chicken = () => {
     order_chicken.append(food_chicken);
     order_chicken.append(cost_chicken);
     standard.append(order_chicken);
+    cost_p11 = amount0 * 35;
+    checkertee();
     checker0 = 1;
   } else {
     amount_chicken.innerHTML = amount0 + "pcs.";
     cost_chicken.innerHTML = "&#8373;" + amount0 * 35 + ".00";
+    cost_p11 = amount0 * 35;
+    checkertee();
   }
 };
 
@@ -1219,10 +1281,14 @@ subtract_chicken = () => {
     amount_chicken.innerHTML = "";
     b = 0;
     checker0 = "string";
+    cost_p11 = amount0 * 35;
+    checkertee();
     order_chicken.remove();
   } else {
     chicken_amount.innerHTML = amount0;
     cost_chicken.innerHTML = "&#8373;" + amount0 * 35 + ".00";
+    cost_p11 = amount0 * 35;
+    checkertee();
     if (amount0 === 1) {
       amount_chicken.innerHTML = amount0 + "pc.";
     } else {
@@ -1272,14 +1338,19 @@ add_vegan = () => {
     order_vegan.append(cost_vegan);
     standard.append(order_vegan);
     checker11 = 1;
+    cost_p12 = amount11 * 45;
+    checkertee();
   } else {
     amount_vegan.innerHTML = amount11 + "pcs.";
     cost_vegan.innerHTML = "&#8373;" + amount11 * 45 + ".00";
+    cost_p12 = amount11 * 45;
+    checkertee();
   }
 };
 
 subtract_vegan = () => {
   amount11 = amount11 - 1;
+
   if (amount11 <= 0) {
     minus_circle11.style.opacity = "0";
     amount11 = 0;
@@ -1287,10 +1358,14 @@ subtract_vegan = () => {
     amount_vegan.innerHTML = "";
     n = 0;
     checker11 = "string";
+    cost_p12 = amount11 * 45;
+    checkertee();
     order_vegan.remove();
   } else {
     vegan_amount.innerHTML = amount11;
     cost_vegan.innerHTML = "&#8373;" + amount11 * 45 + ".00";
+    cost_p12 = amount11 * 45;
+    checkertee();
     if (amount11 === 1) {
       amount_vegan.innerHTML = amount11 + "pc.";
     } else {
